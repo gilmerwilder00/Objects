@@ -2,7 +2,7 @@
 // Actividad 01:   Property Shorthand
 
 const nombre = 'Pedro Suarez Lopez';
-const edad = 18;
+const edad = 24;
 const correo = 'pedros@gmail.com';
 const altura = 1.75;
 const peso = 65;
@@ -11,8 +11,18 @@ const peso = 65;
 
 // Paso1.Definición del Objeto con Property Shorthand (estructuracion de objetos)
 
+// const perfil1 = {
+//     nombre: nombre,
+//     edad: edad,
+//     correo:correo,
+//     altura:altura,
+//     peso:peso
+// }
+
+
 const perfil = {nombre,edad,correo,altura,peso};
-// console.log(perfil);
+
+console.log(perfil);
 
 // Paso 2. Uso del objeto en HTMl
 document.getElementById('nombre').textContent = `Nombre : ${perfil.nombre}`
@@ -36,8 +46,14 @@ if(perfil.edad<18){
 // Actividad 02:  Desestructuración de objetos
 
 // Ejemplo
+
 let frutas = ["manzana", "banana", "naranja"];
-let [fruta1, fruta2, fruta3] = frutas;
+console.log(frutas);
+
+["manzana", "banana", "naranja"]
+
+let [fruta1, fruta2, fruta3] = frutas; 
+
 console.log(fruta1); // manzana
 console.log(fruta2); // banana
 console.log(fruta3); // naranja
